@@ -1,0 +1,530 @@
+@charset "utf-8";
+/* CSS Document */
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+.popup_1 .pagenation ul li{
+
+}
+/*---------표영역-----------*/
+.popup_1 .pop_id ul li{
+	margin-bottom:15px;
+}
+.popup_1 .pop_id2{
+	margin-bottom:15px;
+}
+
+.popup_1 .pop_id ul li .lbl{
+	width: 60px;
+	display: inline-block;
+}
+.popup_1 .pop_id2 .lbl{
+	width: 80px;
+	display: inline-block;
+}
+
+/*------------리스트------------*/
+.pagenation{
+	width:100%;
+	margin:20px 0;
+	text-align:center;	
+}
+.pagenation li a{
+	display:inline-block;
+	color:black;
+}
+.pagenation li{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	border:1px solid lightgray;
+	vertical-align:middle;
+}
+.img_a2{
+	margin-top:5px;
+}
+.popup_1{
+	width:550px;
+	margin:auto;
+	position:absolute;
+	
+	}
+	.popup_1 .pop_title .pop_close {
+	float: right;
+}
+.popup_1 .pop_title .title {
+	text-align: center;
+	width:100%;
+	height:30px;
+	background:#284e7d;
+}
+
+/*------------리스트------------*/
+* {
+	padding:0;
+	margin:0;
+}
+
+
+/*-------------------공통-----------------------*/	
+body{
+	font-family:나눔고딕;
+	padding:0;
+	margin:0;
+	font-size:15px;
+	overflow-y:scroll;
+
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#fff;
+	display:block;}
+	
+a:hover{
+	border-bottom-color:#06C;
+	border-bottom:3px;
+	display:block;
+	}
+
+
+.wrap p .h1_txt{
+	font-size:26px;
+	font-weight:600;
+}
+.wrap p{
+	margin-top: 30px;
+}
+
+.popup_1 .pop_title .pop_close button {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	height: 20px;
+	width: 20px;
+	background-color: #FFF;
+	cursor:pointer;
+}
+.popup_1 .pop_id ul li .name_text {
+	height: 22px;
+	width: 120px;
+}
+.name_text22 {
+	height: 22px;
+	width: 110px;
+	border:1px solid #666;
+}
+.popup_1 .pop_id {
+	width:510px;
+	margin:auto;
+	margin-top: 20px;
+}
+
+.popup_1 .pop_id ul li .name_text2 {
+	height: 22px;
+	width: 320px;
+}
+.name_text3{
+	width:340px;
+	height: 22px;
+}
+.popup_1 .pop_id2 .name_text {
+	height: 22px;
+	width: 150px;
+}
+
+
+.popup_1 .pop_id2 .name_text2 {
+	height: 22px;
+	width: 380px;
+}
+
+
+.select_line{
+	padding-top:10px;
+	margin-bottom:10px;
+	margin-top:20px;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.textbox_date{
+	width:90px;
+	height:23px;
+	text-align:center;
+	background:white;
+	border:1px solid lightgray;	
+}
+.calendar{
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.until{
+	margin:0 8px;	
+}
+.btn_inquiry{
+	width:65px;
+	height:25px;
+	border:0px;
+	margin-left:10px;
+	vertical-align:bottom;
+	background:#f65b5b;
+	color:#fff;
+	cursor:pointer;
+}
+.btn_inquiry2{
+	width:65px;
+	height:25px;
+	border:0px;
+	vertical-align:bottom;
+	background:#284e7d;
+	color:#fff;
+	cursor:pointer;
+}
+.btn_inquiry2:hover{
+	background:#666;
+}
+.wrap fieldset ul li .btn_2{
+	width:65px;
+	height:25px;
+	border:1px solid gray;
+	background:white;	
+	margin:0 10px;
+	vertical-align:bottom;
+	cursor:pointer;
+}
+.btn_inquiry:hover{
+	background:#933;
+	color:#fff;	
+}
+.select_1{
+	width:70px;
+	height:25px;	
+}
+.select_2{
+	width:110px;
+	height:25px;	
+}
+.search_category{
+	margin-right:5px;
+	margin-left:123px;
+}
+.search_1{
+	width:150px;
+	height:23px;	
+}
+.btn_search{
+	width:60px;
+	height:25px;
+	vertical-align:bottom;
+	background:white;
+	border:1px solid gray;
+	cursor:pointer;
+}
+.btn_search:hover{
+	background:whitesmoke;
+}
+.btn_refresh{
+	width:	70px;
+	height:25px;
+	background:white;
+	border:1px solid gray;
+	vertical-align:bottom;
+	margin-left:5px;
+	cursor:pointer;
+}
+.btn_refresh:hover{
+	background:whitesmoke;
+}
+.img_a{
+	vertical-align:middle;	
+}
+
+
+.copy_btn{
+	width:69px;
+	height:24px;
+	vertical-align:bottom;
+	background:#f65b5b;
+	border:0px;
+	color:#fff;
+	cursor:pointer;
+}
+.copy_btn:hover{
+	background:#933;
+}
+.popup_1 .chk {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.popup_1 .pop_id2 .name_text3 {
+	height: 50px;
+	width: 440px;
+	background-color:#EEE;
+	border:0px;
+	text-align:center;
+}
+.popup_1 .pop_id2 {
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.ok_btn{
+	width:60px;
+	height:25px;
+	vertical-align:bottom;
+	background:#f65b5b;
+	border:0px;
+	color:#fff;
+	cursor:pointer;
+}
+.ok_btn:hover{
+	background:#933;
+}
+.popup_1 .okbtn {
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+	cursor:pointer;
+}
+.popup_1 .pop_id ul li .user_text {
+	height: 22px;
+	width: 100px;
+}
+.popup_1 .qr{
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+.popup_1 .qr_txt{
+	text-align:center;
+	margin-bottom:30px;
+}
+.qr_btn{
+	border:1px solid #333333;
+	width:256px;
+	height:40px;
+	color:#fff;
+	background:#333333;
+	font-size:20px;
+	cursor:pointer;
+	margin-top:10px;
+}
+
+.qrbtn{
+	text-align:center;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+.qr_btn:hover{
+	background:#666;
+}
+
+/*------------텍스트팝업-------------*/
+/*---------표영역-----------*/
+.popup_1 .pop_id ul li{
+	margin-bottom:15px;
+}
+.popup_1 .pop_id2{
+	margin-bottom:15px;
+}
+h3{
+	font-size:20px;
+	font-weight:500;
+	padding-top:3px;
+	color:#fff;
+
+}
+.popup_1 .pop_id ul li .lbl{
+	width: 80px;
+	display: inline-block;
+	font-size:14px;
+}
+.popup_1 .pop_id2 .lbl{
+	width: 80px;
+	display: inline-block;
+}
+
+.table{
+	display:table;
+	border: 1px solid #CCC;
+	text-align:center;
+	width:510px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;	
+}
+
+
+.t_row{
+	display:table-row;	
+	color:#333;
+	font-size:13px;
+}
+/*.table .t_row:nth-of-type(even){
+	background:lavender;	
+}*/
+.t_row div:nth-of-type(1){
+	width:200px;
+	height:30px;
+	line-height:30px;	
+	text-align:center;
+	
+}
+.t_row div:nth-of-type(2){
+	width:200px;
+	height:25px;
+	line-height:25px;	
+	text-align:center;
+}
+.t_row div:nth-of-type(3){
+	width:110px;
+	height:25px;
+	line-height:25px;	
+	text-align:center;
+}
+
+.align_center{
+	text-align:center !important;	
+}
+.t_cell{
+	display:table-cell;
+}
+.border-right{
+	border-right:1px solid lightgray;	
+}
+.border-top{
+	border-top:1px solid lightgray;	
+}
+/*---------//표영역----------*/
+/*------------리스트------------*/
+.pagenation{
+	width:100%;
+	margin:20px 0;
+	text-align:center;	
+}
+.pagenation li a{
+	display:inline-block;
+	color:black;
+}
+.pagenation li{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	border:1px solid lightgray;
+	vertical-align:middle;
+}
+.img_a2{
+	margin-top:5px;
+}
+.popup_1{
+	width:550px;
+	margin:auto;
+	position:absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	
+	}
+	.popup_1 .pop_title .pop_close {
+	float: right;
+}
+.popup_1 .pop_title .title {
+	text-align: center;
+	height:30px;
+
+}
+.tlt_1{
+	width:510px;
+	margin:auto;
+	margin-top:20px;
+}
+/*------------리스트------------*/
+* {
+	padding:0;
+	margin:0;
+}
+
+
+
+/*-------------------공통-----------------------*/	
+
+
+
+.popup_1 .pop_id5 ul li .name_text {
+	height: 22px;
+	width: 120px;
+	margin: 15px 0;
+		
+}
+.popup_1 .pop_id5 {
+	margin-top: 20px;
+	text-align:center;
+
+}
+
+.popup_1 .pop_id6 {
+	margin: 60px 0 ;
+	text-align:center;
+
+}
+.popup_1 .okbtn {
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:center;
+	cursor:pointer;
+}
+.ok_btn22{
+	margin-top:20px;
+	width: 200px;
+	height:30px;
+	background:#f65b5b;
+	color:#fff;
+	border:0px;
+	font-size:17px;
+	cursor:pointer;
+}
+.ok_btn22:hover{
+	background:#2151933;
+}
+.popup_1 .tlt_1 ul li{
+	display:inline-block;
+}
+.chk_1{
+	vertical-align:middle;
+}
+.ul_chk{
+	text-align:center;
+	margin-top:10px;
+}
+hr{
+	margin-top:5px;.popup_1 .tlt_1 ul li {
+	display: inline-block;
+}
+
+/* IE11에서 input[type=text] element의 clear 버튼을 숨긴다 */
+input::-ms-clear {
+	display: none;
+}

@@ -1,0 +1,200 @@
+﻿#wrapper {
+		  max-width:640px;
+		  height:839px;
+    	  margin:0 auto;
+		  padding:0;
+		  background:#000;
+		  box-shadow: 4px 10px 28px -8px rgba(0,0,0,0.20);
+				 -webkit-box-shadow: 4px 10px 28px -8px rgba(0,0,0,0.20);
+				 -moz-box-shadow: 4px 10px 28px -8px rgba(0,0,0,0.20);
+}
+
+
+.container {
+            max-width:640px;
+			height:839px;
+			margin:0 auto;
+			background:#4f698a;
+}
+
+
+/* top */
+.container .top {
+				 max-width:640px;
+				 min-height:63px;
+				 margin:0 auto;
+				 background:#4f698a;
+				 /*background:#5686ce;*/
+}
+.container .top .title{
+					   width:570px;
+					   height:auto;
+					   margin:0 auto;
+					   text-align:center;
+					   padding-top:20px;
+}
+.container .top .title h1{
+					   width:200px;
+					   height:auto;
+					   margin:0 auto;
+					   border-bottom:1px solid #ffc107;
+					  
+}
+.container .top .window_close_icon{
+					   			   width:30px;
+					   			   height:26px;
+					   			   float:right;
+								   margin-top:-38px;
+								   margin-right:4px;
+}
+/* top */
+
+
+/* main */
+.container .main {
+				 max-width:620px;
+				 height:713px;
+				 margin:0 auto;
+				 margin-top:10px;
+				 background:#fff;
+				 box-shadow: 4px 10px 28px -8px rgba(0,0,0,0.20);
+				 -webkit-box-shadow: 4px 10px 28px -8px rgba(0,0,0,0.20);
+				 -moz-box-shadow: 4px 10px 28px -8px rgba(0,0,0,0.20);
+}
+.container .main .content{
+						  max-width:548px;
+				 		  height:713px;
+						  margin:0 auto;
+				 		  /*background:#85f14b;*/
+}
+.container .main .content .con_box{
+								   width:548px;
+								   height:auto;
+								   float:left;
+								   border-bottom:1px solid #ebebeb;
+								   background:#fff;
+}
+.container .main .content .point_area{
+									 width:24px;
+				 		 			 height:auto;
+						  			 float:left;
+									 padding-top:20px;
+									 padding-bottom:20px;
+				 		  			 background:#fff;
+}
+.container .main .content .text_area{
+									 width:464px;
+				 		 			 height:auto;
+						  			 float:left;
+									 padding-left:4px;
+									 padding-top:20px;
+									 padding-bottom:20px;
+}
+.container .main .content .icon_area{
+									 width:60px;
+				 		 			 height:auto;
+						  			 float:right;
+}
+.container .main .content .text_area_resize{
+									 width:524px;
+				 		 			 height:auto;
+						  			 float:left;
+									 padding-left:4px;
+									 padding-top:20px;
+									 padding-bottom:20px;
+				 		  			 /*background:#dbdbbd;*/
+}
+.container .main .content .text_area_resize .app_down_icon{
+														   float:right;
+}
+.s_android_btn_area {
+				   width:127px;
+    			   height:28px;
+    			   float:left;
+    			   background: url(../../images/notice/s_android_down_btn.png) 0px no-repeat;
+				   border-radius:3px;
+}
+.s_android_btn_area:hover{
+						background: url(../../images/notice/s_android_down_hover_btn.png) 0px no-repeat;           
+}
+.s_app_btn_area {
+    		   width:127px;
+    		   height:28px;
+    		   float:left;
+			   background: url(../../images/notice/s_app_down_btn.png) 0px no-repeat;
+			   border-radius:3px;
+}
+.s_app_btn_area:hover{
+					background: url(../../images/notice/s_app_down_hover_btn.png) 0px no-repeat;           
+}
+.container .main .content .btn_box{
+								   width:548px;
+								   height:auto;
+								   float:left;
+								   background:#fff;
+								   text-align:center;
+}
+.android_btn_area {
+				   width:267px;
+    			   height:54px;
+    			   float:left;
+    			   background: url(../../images/notice/android_down_btn.png) 0px no-repeat;
+				   border-radius:3px;
+}
+.android_btn_area:hover{
+						background: url(../../images/notice/android_down_hover_btn.png) 0px no-repeat;           
+}
+.app_btn_area {
+    		   width:267px;
+    		   height:54px;
+    		   float:left;
+			   background: url(../../images/notice/app_down_btn.png) 0px no-repeat;
+			   border-radius:3px;
+}
+.app_btn_area:hover{
+					background: url(../../images/notice/app_down_hover_btn.png) 0px no-repeat;           
+}
+/* main */
+
+
+/*footer*/
+.footer {
+    	max-width:640px;
+        height:48px;
+        margin: 0 auto;
+        /* background:#aafdf6; */
+}
+.container .footer .content{
+							max-width:548px;
+				 			height:auto;
+							margin:0 auto;
+				 			/*background:#85f14b;*/
+}
+.check_area{
+			width:190px;
+			height:auto;
+			float:left;
+			margin-top:18px;
+}
+.close_area{
+			width:60px;
+			height:auto;
+			float:right;
+			margin-top:15px;
+}
+
+.footer .close_btn {
+					width:60px;
+    				height:23px;
+    				margin: 0 auto;
+    				padding-top:3px;
+    				color:#ffffff;
+    				font-size:13px;
+    				text-align:center;
+    				background-color:#92969a;
+}
+.footer .close_btn:hover {
+    					  background-color:#7f8386;
+						  cursor:pointer;
+}
+/*footer*/

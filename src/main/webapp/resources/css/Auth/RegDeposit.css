@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.btnPersonCertEnable
+{
+	width:120px;
+	height:29px;
+	background:url("../images/address_btn_bg.png") repeat-x center;
+	border:1px solid lightgray;
+	border-radius:2px;
+	text-align:center;
+	color:#000;
+	font-weight:700;
+	font-size:12px;
+	vertical-align:bottom;
+}
+
+.btnPersonCertDisable
+{
+	width:120px;
+	height:29px;
+	background:url("../images/address_btn_bg.png") repeat-x center;
+	border:1px solid lightgray;
+	border-radius:2px;
+	text-align:center;
+	color:#999;
+	font-weight:700;
+	font-size:12px;
+	vertical-align:bottom;
+}

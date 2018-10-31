@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;	
+}
+html{
+	width:100%;
+	height:100%;	
+}
+body{
+	width:100%;
+	height:100%;	
+	font-family:"나눔 고딕","맑은 고딕",san-serif;
+	font-size:13px;
+}
+input[type=button]{
+	cursor:pointer;	
+}
+
+.wrap{
+	width:100%;
+	height:100%;	
+}
+.wrap_top{
+	width:100%;
+	height:230px;
+	margin:0 auto;	
+	background:url(../../images/ios/bg_top.png) no-repeat center;
+	background-size:cover;
+}
+.box_logo{
+	width:100%;
+	height:100px;
+	position:relative;
+	top:30px;
+	background:url(../../images/ios/img_eyapayapp.png) center  no-repeat;
+	background-size:90px;
+	text-indent:-9999px;
+}
+.wrap_txt_top{
+	width:100%;
+	text-align:center;
+	position:relative;
+	top:40px;	
+}
+.txt_logo{
+	display:inline-block;
+	width:130px;
+	height:50px;
+	background:url(../../images/ios/txt_eyapay.png) right 8px no-repeat;
+	background-size:120px;	
+	text-indent:-9999px;
+	vertical-align:top;
+	margin-right:8px;
+}
+.txt_logo_right{
+	display:inline-block;
+	width:	215px;
+	height:50px;
+	font-size:2.43em;
+	color:white;
+	text-align:left;
+	word-break:keep-all;
+	word-spacing:-5px;
+	vertical-align:top;
+}
+
+.wrap_cont{
+	position:relative;
+	top:-30px;	
+}
+.wrap_btn{
+	text-align:center;	
+}
+.btn_down{
+	display:inline-block;
+	width:70%;
+	height:60px;
+	background:#00aeff;
+	border-radius:3px;
+	color:white;
+	font-size:23px;	
+	text-decoration:none;
+	line-height:60px;
+	border-style:none;
+}
+.wrap_caution{
+}
+.wrap_caution img{
+	vertical-align:text-bottom;	
+}
+.txt_caution{
+	width:70%;
+	margin:5px auto;
+	text-align:center;
+	color:black;
+	line-height:15px;
+	font-size:1.4em;
+}
+.wrap_feature{
+	width:100%;
+	text-align:center;	
+	margin-top:20px;
+}
+.box_feature{
+	display:inline-block;
+	width:45%;
+	height:130px;
+	padding-top:95px;
+	font-size:1.4em;
+	color:gray;	
+	vertical-align:top;
+}
+.bf1{
+	background:url(../../images/ios/ico1.png) top center no-repeat;
+	background-size:80px;
+}
+.bf2{
+	background:url(../../images/ios/ico2.png) top center no-repeat;
+	background-size:80px;
+	letter-spacing:-1px;
+}
+.bf3{
+	background:url(../../images/ios/ico3.png) top center no-repeat;
+	background-size:80px;
+}
+.bf4{
+	background:url(../../images/ios/ico4.png) top center no-repeat;
+	background-size:80px;
+}
+.txt_feature{
+	color:black;
+	letter-spacing: -0.1em;
+}
+
+
+.section_guide{
+	width:90%;
+	height:90%;
+	margin:0px auto 25px;
+	background: #f8f8f8;
+	border:1px solid #ddd;
+}
+.area_arrow_white{
+	width:100%;
+	height:20px;
+	position:relative;
+	top:-1.5px;
+	background:	url(../../images/ios/bg_howto.png) center -1px no-repeat;
+}
+.tit_guide{
+	width:70%;
+	height:55px;
+	margin:0px auto 0px;
+	padding-top:5px;
+	font-size:2.1em;
+	border-bottom:1px solid lightgray;
+	font-weight:700;
+	color:black;
+	text-align:center;
+	letter-spacing: -0.1em;
+}
+.section_guide hr{
+	width:70%;
+	margin-bottom:5px;
+	border:1px solid #00aeff;	
+}
+.box_step{
+	width:76%;
+	margin:10px auto;	
+}
+.num{
+	font-size:3em;
+	color:#aaa;
+	color:darkorange;
+	color:#ffc82e;
+	margin-top:30px;	
+}
+.txt_desc{
+	font-size:1.4em;
+	margin:10px 0 15px;
+}
+.img_step1{
+	width:100%;
+	text-align:center;	
+}
+.img_step1 img{
+	width:100%;
+	border:1px solid #ccc;
+	box-shadow:2px 2px 8px rgba(0,0,0,0.2)	
+}
+.area_arrow{
+	display:inline-block;
+	width:100%;
+	height:60px;
+	background:url(../../images/ios/arrow_down.png) center no-repeat;
+}
+.area_arrow_top{
+	display:inline-block;
+	display:none;
+	width:100%;
+	height:40px;
+	background:url(../../images/ios/arrow_down_top.png) center no-repeat;
+}
+.wrap_lst{
+	width:90%;
+	text-align:center;
+	margin:30px auto 20px;
+	font-size:1.5em;
+	line-height:1.3;
+	font-weight:700;
+	padding-bottom:40px;
+}
+.txt_lst{
+}
+.color_blue{
+	color:#00aeff;	
+}
+.wrap_lst hr{
+	width:70%;
+	margin:20px auto;
+	border:1px solid #00aeff;	
+}
+.wrap_footer{
+	width:100%;
+}
+.copyright{
+	width:100%;
+	height:35px;
+	text-align:center;
+	background:black;
+	line-height:30px;
+	margin-top:5px;
+	color:#ccc;
+}
+.to_top{
+	text-align:center;
+	width:100px; 
+	margin-top:30px;
+	padding:7px 25px;
+	color:black;
+	font-size:1.5em;
+	text-decoration:none;
+	background:url(../../images/ios/arrow_totop.png) left center no-repeat;
+	padding-left:30px;
+		
+}

@@ -1,0 +1,96 @@
+﻿#wrapper {
+		  height:auto;
+    	  margin:0 auto;
+		  padding:0;
+		  background:#eaedf0;
+}
+.container {
+			/*position:relative;*/
+			height:auto;
+			margin:0 auto;
+			background:#fff;
+}
+
+
+/* top */
+.container .top {
+				 margin:0 auto;
+				 background:#f1eeee;
+}
+.container .top .title{
+					   text-align:center;
+					   padding-top:18px;
+					   padding-bottom:5px;
+}
+/* top */
+
+
+/* main */
+.container .main {
+				 height:auto;
+				 margin:0 auto;
+				 background:#fff;
+}
+.container .main .content{
+				 		  height:auto;
+						  margin:0 auto;
+				 		  background:#fff;
+}
+.container .main .content .con_box{
+								  width:100%;
+								   height:auto;
+								   float:left;
+								   padding:0 15px 10px 15px;
+								   border-bottom:1px solid #ebebeb;
+								   /*background:#dbdbbd;*/
+}
+.container .main .content .icon_area{
+									 width:85px;
+				 		 			 height:auto;
+						  			 float:left;
+									 /*background:#cecece;*/
+}
+.container .main .content .icon_area img{
+						  			 float:left;
+									 /*background:#cecece;*/
+}
+.container .main .content .text_area{
+				 		 			 height:auto;
+						  			 float:left;
+									 padding-top:12px;
+									 /*padding-bottom:15px;*
+				 		  			 /*background:#dbdbbd;*/
+}
+.container .main .content .text_area_1st{
+				 		 			 height:auto;
+						  			 float:left;
+									 padding-top:none;
+									 /*padding-bottom:15px;*
+				 		  			 /*background:#dbdbbd;*/
+}
+.container .main .content .btn_box{
+								   height:auto;
+								   float:left;
+								   background:#fff;
+								   text-align:center;
+}
+.android_btn_area {
+				   width:267px;
+    			   height:54px;
+    			   float:left;
+    			   background: url(../../../images/android_down_btn.png) 0px no-repeat;
+				   border-radius:3px;
+}
+.android_btn_area:hover{
+						background: url(../../../images/android_down_hover_btn.png) 0px no-repeat;           
+}
+.app_btn_area {
+    		   width:267px;
+    		   height:54px;
+    		   float:left;
+			   background: url(../../../images/app_down_btn.png) 0px no-repeat;
+			   border-radius:3px;
+}
+.app_btn_area:hover{
+					background: url(../../../images/app_down_hover_btn.png) 0px no-repeat;           
+}

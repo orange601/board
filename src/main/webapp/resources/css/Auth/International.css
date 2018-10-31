@@ -1,0 +1,67 @@
+/* jQuery UI Spinner에 적용될 커스텀 스타일 */
+.custom-ui-spinner-style
+{
+	border: none !important;
+	xheight: 34px !important;
+	width: 150px !important;
+}
+
+.custom-ui-spinner-style > input
+{
+	border-style: solid !important;
+	border-width: 1px;
+	border-color: #C0C0C0;
+	border-radius: 3px;
+	width: 117px;
+	height: 32px !important;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.custom-ui-spinner-style > a
+{
+	width: 23px !important;
+	border: medium none !important;
+}
+
+.custom-ui-spinner-style > a:nth-child(2)
+{
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+}
+
+.custom-ui-spinner-style > a:nth-child(3)
+{
+	border-bottom-left-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+
+.custom-ui-spinner-up-button
+{
+	background-image: url("../../images/spindle_up.png") !important;
+	width: 23px !important;
+}
+
+.custom-ui-spinner-down-buttom
+{
+	background-image: url("../../images/spindle_down.png") !important;
+	width: 23px !important;
+}
+
+#leftExchange, #rightExchange
+{
+	float: right;
+	width: 120px;
+}
+
+#leftExchangeFlag, #rightExchangeFlag
+{
+	background-position: right;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	width: 25px;
+	height: 21px;
+}

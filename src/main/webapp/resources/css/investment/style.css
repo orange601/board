@@ -1,0 +1,184 @@
+/*2016-09-29 cmj321*/
+.wrap_sub{
+	box-sizing:border-box;
+	width:100%;	
+}
+.banner{
+	width:100%;
+	height:330px;
+	margin-top: 30px;
+}
+.box_sub_tit{
+	box-sizing:border-box;
+	width:100%;
+	border:1px solid lightgray;
+	padding:15px 30px;	
+}
+.st1{
+	display:inline-block;
+	padding-right:12px;
+	color:#1478c8;
+	font-size:1.4em;
+	font-weight:700;
+	border-right:1px solid lightgray;	
+}
+.st_desc{
+	margin-left:8px;	
+}
+.sub_cont_wrap{
+	width:100%;
+	border-top:1px solid lightgray;	
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.box_cont{
+	border-bottom:1px solid lightgray;	
+	padding:30px 0;
+}
+.box_cont:after{
+	content:"";
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;	
+}
+.box_left{
+	float:left;
+	width:250px;
+	border-right:1px solid #e7e7e7;
+	text-align:center;
+}
+.box_left img{
+	margin:10px 0 10px 0;	
+}
+.br_tit{
+	font-size:1.2em;
+	font-weight:700;
+	color:#1478c8;	
+}
+.box_right{
+	float:right;
+	width:700px;
+}
+.box_right p{
+	margin-top:0;
+	margin-bottom:8px;
+	font-weight:300;
+	color:black;
+	font-size:1em;
+}
+.btn_area{
+	margin:40px 0;
+	text-align:center;	
+}
+/*20170105_배너 css 시작*/
+.banner .left_img_area{
+					   width:533px;
+					   height:285px;
+					   float:left;
+}
+.banner .right_info_area{
+						width:455px;
+						height:263px;
+						float:left;
+						background:#f1f1f1;
+						padding:22px 0 0 40px;
+}
+.banner .right_info_area div{
+							float:left;
+							margin:0;
+							padding:0;
+}
+.banner .right_info_area div{
+							   list-style:none;
+}
+.banner .right_info_area .point_bar{
+								    width:65px;
+									height:4px;
+									float:left;
+									background:#1478c8;
+}
+.banner .right_info_area .title_main{
+								width:390px;
+								height:35px;
+								float:left;
+								font-size:2.1em;
+								font-weight:600;
+								color:#1478c8;
+								letter-spacing:-0.9px;
+								padding-top:6px;
+}
+.banner .right_info_area .address{
+								width:390px;
+								height:auto;
+								float:left;
+								font-size:1.2em;
+								font-weight:400;
+								color:#37aa52;
+								letter-spacing:-0.5px;
+}
+.banner .right_info_area .sub_title{
+								width:390px;
+								height:auto;
+								float:left;
+								font-size:1em;
+								font-weight:300;
+								color:#000;
+								line-height:1.5;
+								padding-top:12px;
+								padding-bottom:22px;
+}
+.banner .right_info_area .info_discrip{
+								width:390px;
+								height:auto;
+								float:left;
+								font-size:1em;
+								font-weight:300;
+								color:#000;
+								line-height:2.0;
+}
+
+/*20170105_배너 css 끝*/
+
+/*call_center_box 시작*/
+.callcenter_box{
+				width:350px;
+				background:#fff;
+				height:67px;
+				border:1px solid #1478c8;
+}
+.callcenter_box .img_area{
+						  width:55px;
+						  float:left;
+						  margin-left:24px;
+						  margin-top:5px;
+}
+.callcenter_box .info_area{
+						   width:54px;
+						   float:left;
+						   margin-top:5px;
+}
+.callcenter_box .info_area .tit_top{
+									font-size:10px;
+									font-weight:lighter;
+									color:#1478c8;
+									margin-top:5px;
+}
+.callcenter_box .info_area .tit_bottom{
+									font-size:25px;
+									font-weight:bolder;
+									color:#1478c8;
+}
+
+
+.callcenter_box .number_area{
+		   width:189px;
+		   float:left;
+}
+.callcenter_box .number_area .phone_number{
+										   font-size:33px;
+										   font-weight:normal;
+										   color:#1478c8;
+										   margin-top:15px;
+}
+/*call_center_box 끝*/

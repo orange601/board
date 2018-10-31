@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+/* jQuery UI Dialog용 UI */
+/* 상단 타이틀바 없는 형태 */
+.notitle-dialog .ui-dialog-titlebar
+{
+	display: none;
+}
+
+.notitle-dialog .ui-dialog-content 
+{
+	padding: .5em 3px;
+}
+
+/* 스크롤바랑 상단 타이틀바 없는 다이얼로그 */
+.notitle-and-noscroll-dialog .ui-dialog-titlebar
+{
+	display: none;
+}
+
+.notitle-and-noscroll-dialog .ui-dialog-titlebar
+{
+	padding: .5em 3px;
+}
+
+.notitle-and-noscroll-dialog .ui-dialog-content
+{
+	overflow: hidden;
+}
+
+/* 페이앱 결제 팝업용 스타일 */
+.title-dialog .ui-dialog-titlebar
+{
+	display: inherit;
+}
+
+.title-dialog .ui-dialog-content
+{
+	overflow: hidden;
+}
+
+/* 우측 코인시세 탭 스타일 */
+/* .right_tab_con .ui-widget input, */
+/* .right_tab_con .ui-widget select, */
+/* .right_tab_con .ui-widget textarea, */
+/* .right_tab_con .ui-widget-content { */
+/* 	border: 1px solid #d3d3d3; */
+/* 	background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x; */
+/* 	color: #222222; */
+/* } */
+/* .right_tab_con .ui-widget-content a { */
+/* 	color: #222222; */
+/* } */
+/* .right_tab_con .ui-widget-header { */
+/* 	border: none; */
+/* 	background: #f7f7f7; */
+/* 	color: #222222; */
+/* 	font-weight: bold; */
+/* } */
+/* .right_tab_con .ui-widget-header a { */
+/* 	color: #222222; */
+/* } */

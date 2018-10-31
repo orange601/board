@@ -1,0 +1,61 @@
+/* grid cation border */
+th.ui-th-column {
+	border-right-color: transparent !important;
+}
+
+/* grid header background color */
+.ui-jqgrid .ui-jqgrid-labels th.ui-th-column {
+	background-color: #F7F7F7;
+	background-image: none;
+	font-weight:900;
+}
+
+ /* rownumbers background color */
+.jqgrow .jqgrid-rownum { 
+	background-color: #F7F7F7;
+	background-image: none; 
+}
+/* cell border */
+.ui-jqgrid tr.ui-row-ltr td {
+ border-right-style: none;
+ border-left-style: none;
+ border-botoom-color:red;
+}
+
+/* border radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl, .ui-corner-right, .ui-corner-tr, .ui-corner-bottom, .ui-corner-bl, .ui-corner-br {
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    -khtml-border-radius:0;
+}
+
+.ui-jqgrid 
+{ 
+  border-top-width: 0px; 
+  border-bottom-width: 0px; 
+  border-left-width: 0px;
+  border-right-width: 0px;
+} 
+	
+#pager{
+	background-image: none;
+	background-color: #F7F7F7;
+}
+	
+.ui-jqgrid .ui-jqgrid-view {
+	font-size:13px;
+}
+
+.ui-jqgrid tr.jqgrow td{
+	 border-bottom-color:#c3c1c1;
+}
+
+.ui-jqgrid tr.jqgrow{
+	line-height : 1.39;
+}
+
+/* 클릭 하이라이트 */
+/* .ui-state-highlight{
+	border:none!important;
+} */

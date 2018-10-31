@@ -1,0 +1,134 @@
+
+/** BEGIN CSS **/
+    rotate-loading {}
+        @keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @-moz-keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @-webkit-keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @-o-keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @-moz-keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @-webkit-keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @-o-keyframes rotate-loading {
+            0%  {transform: rotate(0deg);-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -o-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+            100% {transform: rotate(360deg);-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -moz-transform: rotate(360deg);}
+        }
+
+        @keyframes loading-text-opacity {
+            0%  {opacity: 1}
+            20% {opacity: 1}
+            50% {opacity: 0}
+            100%{opacity: 1}
+        }
+
+        @-moz-keyframes loading-text-opacity {
+            0%  {opacity: 1}
+            20% {opacity: 1}
+            50% {opacity: 0}
+            100%{opacity: 1}
+        }
+
+        @-webkit-keyframes loading-text-opacity {
+            0%  {opacity: 1}
+            20% {opacity: 1}
+            50% {opacity: 0}
+            100%{opacity: 1}
+        }
+
+        @-o-keyframes loading-text-opacity {
+            0%  {opacity: 1}
+            20% {opacity: 1}
+            50% {opacity: 0}
+            100%{opacity: 1}
+        }
+        .loading-container,
+        .loading2 {
+            height: 100px;
+            position: relative;
+            width: 100px;
+            border-radius: 100%;
+        }
+
+
+        .loading-container { position: absolute; left: 0; top: 0; z-index: 20; width: 100%; height: 100%; border-radius: 0; background-color: #000; opacity: 0.6; }
+
+        .loading2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            border: 2px solid transparent;
+            border-color: transparent #fff transparent #FFF;
+            -moz-animation: rotate-loading 1.5s linear 0s infinite normal;
+            -moz-transform-origin: 50% 50%;
+            -o-animation: rotate-loading 1.5s linear 0s infinite normal;
+            -o-transform-origin: 50% 50%;
+            -webkit-animation: rotate-loading 1.5s linear 0s infinite normal;
+            -webkit-transform-origin: 50% 50%;
+            animation: rotate-loading 1.5s linear 0s infinite normal;
+            transform-origin: 50% 50%;
+        }
+        /* @media (max-width: 1470px ){
+            .loading { left: 685px; margin-left: 0; } 
+        } */
+        /* .loading-container:hover .loading {
+            border-color: transparent #E45635 transparent #E45635;
+        } */
+        .loading-container:hover .loadin2,
+        .loading-container .loading2 {
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        #loading-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -48px;
+            margin-top: -5px;
+            -moz-animation: loading-text-opacity 2s linear 0s infinite normal;
+            -o-animation: loading-text-opacity 2s linear 0s infinite normal;
+            -webkit-animation: loading-text-opacity 2s linear 0s infinite normal;
+            animation: loading-text-opacity 2s linear 0s infinite normal;
+            color: #ffffff;
+            font-family: "Helvetica Neue, "Helvetica", ""arial";
+            font-size: 10px;
+            font-weight: bold;
+            opacity: 1;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100px;
+        }
+

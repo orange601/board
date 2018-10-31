@@ -1,0 +1,72 @@
+/* jQuery UI Spinner에 적용될 커스텀 스타일 */
+#paging > ul li {
+        display:inline-block;
+}
+.custom-ui-spinner-style
+{
+	border: none !important;
+	width: 197px !important;	/*금액조정버튼 위치조절!*/
+	font-family:"Nanum Gothic", 'OpenSans';
+	font-weight:600;
+	font-size:13px;}
+
+.custom-ui-spinner-style > input
+{
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 125px center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #C0C0C0;
+	width: 155px;
+	height: 29px !important;
+	/*margin-left: 0px;*/
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family:"Nanum Gothic", 'OpenSans';
+	font-weight:600;
+	font-size:13px;
+}
+
+.custom-ui-spinner-style > a
+{
+	width: 23px !important;
+	border: medium none !important;
+}
+
+.custom-ui-spinner-up-button
+{
+	background-image: url("../../images/spindle_up.png") !important;
+	width: 23px !important;
+}
+
+.custom-ui-spinner-down-buttom
+{
+	background-image: url("../../images/spindle_down.png") !important;
+	width: 23px !important;
+}
+
+#Exchange
+{
+	float: right;
+	width: 120px;
+}
+
+#exchangeFlag
+{
+	background-position: right;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-right: 5px;
+	width: 25px;
+	height: 21px;
+}
+
+/* IE10 이상에서 입력박스에 텍스트 입력이 발생할 경우 우측에 표시되는 X 버튼을 제거한다 */
+/*
+input::-ms-clear
+{
+	display: none;
+}
+*/
