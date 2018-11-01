@@ -1,16 +1,54 @@
 package com.coinRank.board.dao;
 
+import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
+import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.coinRank.board.vo.Board;
+import com.coinRank.board.vo.BoardReply;
+
 @Repository("boardDao")
 public class BoardDaoImpl implements BoardDao {
-    @Autowired
-    private SqlSession sqlSession;
+	private final String PACKAGE_PATH = "BoardList.";
+	private final String DB_PROPERTIES = "db.properties";
+	private final String MYBATIS_CONFIG_FILE = "mybatis/MyBatis-config.xml";
+	
+    private SqlSession sqlSession = null;
+    
+    public BoardDaoImpl() {
+		InputStream is = null;
+		try {
+			InputStream propInputStream = Resources.getResourceAsStream(this.DB_PROPERTIES);
+			
+			Properties prop = new Properties();
+			prop.load(propInputStream);
+			
+			is = Resources.getResourceAsStream(this.MYBATIS_CONFIG_FILE);
+			sqlSession = new SqlSessionFactoryBuilder().build(is, prop).openSession(false);
+		} catch(Exception e) {
+			e.printStackTrace();
+			//logger.error("TickerDao에서 DB 접속 중 오류 발생", e);
+		}
+    }
+    
+    @Override
+    public Board getContentView(Map<String, Object> paramMap) {
+    	Board result = new Board();
+		try {
+			String statement = this.PACKAGE_PATH + "selectContentView";
+			result = sqlSession.selectOne(statement, paramMap);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+    }
  
     public void setSqlSession(SqlSession sqlSession){
         this.sqlSession = sqlSession;
@@ -36,10 +74,6 @@ public class BoardDaoImpl implements BoardDao {
         return sqlSession.selectList("selectContent", paramMap);
     }
  
-    @Override
-    public Board getContentView(Map<String, Object> paramMap) {
-        return sqlSession.selectOne("selectContentView", paramMap);
-    }
  
     @Override
     public int regReply(Map<String, Object> paramMap) {
@@ -81,8 +115,8 @@ public class BoardDaoImpl implements BoardDao {
         }else {
             return false;
         }
-        
     }
+    
     @Override
     public boolean updateReply(Map<String, Object> paramMap) {
         int result = sqlSession.update("updateReply", paramMap);
@@ -93,5 +127,11 @@ public class BoardDaoImpl implements BoardDao {
             return false;
         }
     }
-
+    
+	public void close() {
+		if(this.sqlSession != null)
+			sqlSession.close();
+		
+		sqlSession = null;
+	}
 }

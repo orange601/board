@@ -6,85 +6,53 @@
 <html>
     <head>
         <title>게시판</title>
+        <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common/paging/paging.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+        <style>
+            #paging > ul {
+        list-style-type:none;
+}
+    
+    #paging > ul li {
+        font-size: 1.1em;
+        display:inline-block;
+        cursor:pointer;
+        padding: 0 3px;
+}
+    #paging > ul > li:hover {
+        /*background: #fbfbfb;*/
+        /*font-weight:bold;*/
+        color: #0080ff;
+    }
+    
+
+    #paging > ul > li.selected {
+        color: #0080ff;
+        font-size:1.2em;
+        font-weight:bold;
+        cursor:default;
+
+}
+        </style>
         <script type="text/javascript">
             $(document).ready(function(){
                  
                 //--페이지 셋팅
-                var totalPage = ${totalPage}; //전체 페이지
+                var totalPage = ${totalPage}; //전체 페이지  (1|2|3|4|5)
                 var startPage = ${startPage}; //현재 페이지
+                var totalCnt = ${totalCnt}; //전체 글 개수
                  
-                var pagination = "";
-                 
-                //--페이지네이션에 항상 10개가 보이도록 조절
-                var forStart = 0;
-                var forEnd = 0;
-                 
-                if((startPage-5) < 1){
-                    forStart = 1;
-                }else{
-                    forStart = startPage-5;
-                }
-                 
-                if(forStart == 1){
-                     
-                    if(totalPage>9){
-                        forEnd = 10;
-                    }else{
-                        forEnd = totalPage;
-                    }
-                     
-                }else{
-                     
-                    if((startPage+4) > totalPage){
-                         
-                        forEnd = totalPage;
-                         
-                        if(forEnd>9){
-                            forStart = forEnd-9
-                        }
-                         
-                    }else{
-                        forEnd = startPage+4;
-                    }
-                }
-                //--페이지네이션에 항상 10개가 보이도록 조절
-                 
-                //전체 페이지 수를 받아 돌린다.
-                for(var i = forStart ; i<= forEnd ; i++){
-                    if(startPage == i){
-                        pagination += ' <button name="page_move" start_page="'+i+'" disabled>'+i+'</button>';
-                    }else{
-                        pagination += ' <button name="page_move" start_page="'+i+'" style="cursor:pointer;" >'+i+'</button>';
-                    }
-                }
-                 
-                //하단 페이지 부분에 붙인다.
-                $("#pagination").append(pagination);
-                //--페이지 셋팅
-                 
-                 
+                $("#paging").append(PagingHelper.pagingHtml(totalCnt, startPage, totalPage));
+                
+                //글 자세히 보기 페이지로 이동
                 $("a[name='subject']").click(function(){
-                     
                     location.href = "/board/view?id="+$(this).attr("content_id");
-                     
                 });
                  
+                // 글쓰기페이지로 이동
                 $("#write").click(function(){
                     location.href = "/board/edit";
                 });
-                                 
-                $(document).on("click","button[name='page_move']",function(){
-                     
-                    var visiblePages = 10;//리스트 보여줄 페이지
-                     
-                    $('#startPage').val($(this).attr("start_page"));//보고 싶은 페이지
-                    $('#visiblePages').val(visiblePages);
-                     
-                    $("#frmSearch").submit();
-                     
-                });
-                 
             });
         </script>
         <style>
@@ -127,7 +95,7 @@
                         <c:when test="${fn:length(boardList) == 0}">
                             <tr>
                                 <td colspan="4" align="center">
-                                    조회결과가 없습니다.
+                                   	조회결과가 없습니다.
                                 </td>
                             </tr>
                         </c:when>
@@ -147,6 +115,7 @@
                 </table>
                 <br>
                 <div id="pagination"></div>
+                <div id="paging"></div>
             </div>
         </form>
     </body>

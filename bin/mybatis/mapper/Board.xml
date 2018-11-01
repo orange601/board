@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardList">
+	<!-- 테스트 -->
+	<insert id="boardInsert" parameterType="WriteVO">	
+		insert into [dbo].[BOARD] values (#{title}, '1', #{writer}, '3', 0 );
+	</insert>
+	
+	<select id="selectContentView" resultType="com.coinRank.board.vo.Board" parameterType="java.util.HashMap">
+        SELECT
+            id,
+            subject,
+            content,
+            writer,
+           	register_datetime
+        FROM
+            board
+        WHERE
+            id = #{id}
+    </select>
+    
+    <select id="selectContentCnt" resultType="int" parameterType="java.util.HashMap">
+        SELECT
+            count(id)
+        FROM
+            board
+    </select>
+    
+     <select id="selectContent" resultType="com.coinRank.board.vo.Board" parameterType="java.util.HashMap">
+     	SELECT
+     		id,
+            subject,
+            content,
+            writer,
+            register_datetime
+		FROM 
+			board
+		ORDER BY 
+			id
+		OFFSET 
+			#{start} ROWS
+		FETCH NEXT 
+			#{end} ROWS ONLY
+    </select>
+    
+    <!-- 글쓰기 -->
+    <insert id="insertContent" parameterType="java.util.HashMap">
+        INSERT INTO BOARD(
+            subject,
+            content,
+            writer,
+            password
+        )VALUES(
+            #{subject},
+            #{content},
+            #{writer},
+            #{password}
+        )
+    </insert>
+    
+    <!-- ID와PW조회 -->
+    <select id="selectBoardCnt" resultType="int" parameterType="java.util.HashMap">
+        SELECT
+            count(id)
+        FROM
+            board
+        WHERE
+            id = #{id}
+            and password = #{password}
+    </select>
+    
+    <!-- 글 수정 -->
+    <insert id="updateContent" parameterType="java.util.HashMap">
+        UPDATE
+            board
+        SET
+            subject = #{subject},
+            content = #{content},
+            writer = #{writer},
+            password = #{password}
+        WHERE
+            id = #{id}
+    </insert>
+    
+    <!-- 글삭제 -->
+    <delete id="deleteBoard" parameterType="java.util.HashMap">
+        DELETE
+        FROM
+            board
+        WHERE
+            id = #{id}
+            AND password = #{password}
+    </delete>
+</mapper>

@@ -1,0 +1,6 @@
+1. sqlSessionBean 등록
+2. contentType:"application/x-www-form-urlencoded 확인하기
+3.request.getHeader("referer") 확인하기
+4.hsts 확인
+5.xss
+5.injection

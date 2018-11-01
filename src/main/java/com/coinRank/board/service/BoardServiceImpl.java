@@ -1,5 +1,6 @@
 package com.coinRank.board.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -8,11 +9,19 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.coinRank.board.dao.BoardDao;
+import com.coinRank.board.vo.Board;
+import com.coinRank.board.vo.BoardReply;
 
 @Service("boardService")
 public class BoardServiceImpl implements BoardService {
     @Resource(name="boardDao")
     private BoardDao boardDao;
+    
+    @Override
+    public Board getContentView(Map<String, Object> paramMap) {
+        return boardDao.getContentView(paramMap);
+    }
+    
  
     @Override
     public int regContent(Map<String, Object> paramMap) {
@@ -32,11 +41,6 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public List<Board> getContentList(Map<String, Object> paramMap) {
         return boardDao.getContentList(paramMap);
-    }
- 
-    @Override
-    public Board getContentView(Map<String, Object> paramMap) {
-        return boardDao.getContentView(paramMap);
     }
  
     @Override

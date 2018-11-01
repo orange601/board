@@ -18,7 +18,6 @@
                 });
                  
                 $("#save").click(function(){
-                     
                     //에디터 내용 가져옴
                     var content = CKEDITOR.instances.content.getData();
                      
@@ -42,7 +41,7 @@
                     }
                      
                     //값 셋팅
-                    var objParams = {
+                    var writeParams = {
                             <c:if test="${boardView.id != null}"> //있으면 수정 없으면 등록
                             id          : $("#board_id").val(),
                             </c:if>
@@ -50,30 +49,29 @@
                             writer      : $("#writer").val(),
                             password    : $("#password").val(),
                             content     : content
-                    };
-                     
-                    //ajax 호출
-                    $.ajax({
-                        url         :   "/board/save",
-                        dataType    :   "json",
-                        contentType :   "application/x-www-form-urlencoded; charset=UTF-8",
-                        type        :   "post",
-                        data        :   objParams,
-                        success     :   function(retVal){
- 
-                            if(retVal.code == "OK") {
-                                alert(retVal.message);
-                                location.href = "/board/list";  
-                            } else {
-                                alert(retVal.message);
+                    }; 
+                    
+                    for(var i = 0; i<100; i++){
+                        //ajax 호출
+                        $.ajax({
+                            url:"/board/save",
+                            dataType:"json",
+                            contentType:"application/x-www-form-urlencoded; charset=UTF-8",
+                            type:"post",
+                            data:writeParams,
+                            success:function(retVal){
+                                if(retVal.code == "OK") {
+                                    console.log(retVal.message);
+                                    location.href = "/board/list";  
+                                } else {
+                                	console.log(retVal.message);
+                                }
+                            },
+                            error:function(request, status, error){
+                                console.log("AJAX_ERROR");
                             }
-                             
-                        },
-                        error       :   function(request, status, error){
-                            console.log("AJAX_ERROR");
-                        }
-                    });
-                     
+                        });
+                    }
                      
                 });
                  
@@ -83,8 +81,6 @@
     <body>
         <input type="hidden" id="board_id" name="board_id" value="${boardView.id}" />
         <div align="center">
-            </br>
-            </br>
             <table width="1200px">
                 <tr>
                     <td>
